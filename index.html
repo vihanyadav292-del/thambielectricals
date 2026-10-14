@@ -1,1055 +1,1257 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="theme-color" content="#0755c9">
-<meta name="description" content="Thambi Electricals - Electrical products, lighting and electrical solutions. Contact us on WhatsApp for enquiries.">
-<title>Thambi Electricals | Quality Electrical Solutions</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#103b70">
 
-<style>
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
+  <title>Thambi Electricals | Electrical Products</title>
+  <meta name="description" content="Contact Thambi Electricals in Jhunjhunu, Rajasthan for electrical product inquiries, availability, specifications and pricing.">
+  <meta name="robots" content="index, follow">
 
-:root {
-    --blue: #0755c9;
-    --dark: #08234d;
-    --light: #eef5ff;
-    --white: #ffffff;
-}
-
-html {
-    scroll-behavior: smooth;
-}
-
-body {
-    font-family: Arial, Helvetica, sans-serif;
-    background: var(--white);
-    color: var(--dark);
-    overflow-x: hidden;
-}
-
-.hero {
-    min-height: 100vh;
-    min-height: 100svh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 65px 20px;
-    position: relative;
-    overflow: hidden;
-    background:
-        radial-gradient(circle at 90% 15%, #d5e6ff 0, transparent 32%),
-        radial-gradient(circle at 5% 90%, #e4efff 0, transparent 30%),
-        linear-gradient(135deg, #ffffff, #f2f7ff);
-}
-
-.hero::before {
-    content: "";
-    position: absolute;
-    width: 280px;
-    height: 280px;
-    border: 35px solid rgba(7,85,201,0.06);
-    border-radius: 50%;
-    right: -110px;
-    bottom: -80px;
-}
-
-.hero-content {
-    width: 100%;
-    max-width: 1100px;
-    text-align: center;
-    position: relative;
-    z-index: 1;
-}
-
-.top-label {
-    display: inline-flex;
-    align-items: center;
-    gap: 8px;
-    background: #e4efff;
-    color: var(--blue);
-    border: 1px solid #c9ddff;
-    border-radius: 50px;
-    padding: 10px 18px;
-    font-size: 13px;
-    font-weight: 700;
-    letter-spacing: 1px;
-    text-transform: uppercase;
-    margin-bottom: 25px;
-}
-
-.top-label span {
-    width: 8px;
-    height: 8px;
-    background: #18a957;
-    border-radius: 50%;
-}
-
-h1 {
-    font-size: clamp(39px, 7vw, 76px);
-    line-height: 1.08;
-    letter-spacing: -2px;
-    font-weight: 800;
-    margin-bottom: 23px;
-}
-
-h1 .highlight {
-    color: var(--blue);
-    display: block;
-}
-
-.hero-description {
-    max-width: 650px;
-    margin: 0 auto 30px;
-    font-size: 17px;
-    line-height: 1.8;
-    color: #52647e;
-}
-
-.hero-features {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-wrap: wrap;
-    gap: 12px;
-    margin-bottom: 32px;
-}
-
-.feature {
-    background: rgba(255,255,255,0.9);
-    border: 1px solid #dce7f7;
-    padding: 11px 15px;
-    border-radius: 10px;
-    font-size: 13px;
-    font-weight: 700;
-    color: #243e64;
-}
-
-.feature span {
-    color: var(--blue);
-    margin-right: 5px;
-}
-
-.whatsapp-btn {
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    gap: 11px;
-    background: #20c766;
-    color: #ffffff;
-    text-decoration: none;
-    font-size: 16px;
-    font-weight: 700;
-    padding: 17px 29px;
-    min-height: 56px;
-    border-radius: 12px;
-    box-shadow: 0 9px 25px rgba(32,199,102,0.22);
-    transition: transform 0.2s ease, background 0.2s ease;
-}
-
-.whatsapp-btn:hover {
-    background: #17ae55;
-    transform: translateY(-3px);
-}
-
-.whatsapp-btn svg {
-    width: 24px;
-    height: 24px;
-    flex-shrink: 0;
-}
-
-.contact-note {
-    margin-top: 16px;
-    color: #718096;
-    font-size: 12px;
-}
-
-.bottom-strip {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-    gap: 25px;
-    margin-top: 52px;
-    padding-top: 25px;
-    border-top: 1px solid #dce7f7;
-}
-
-.strip-item {
-    color: #294568;
-    font-size: 13px;
-    font-weight: 700;
-}
-
-.strip-item strong {
-    color: var(--blue);
-    margin-right: 5px;
-}
-
-@media (max-width: 600px) {
-    .hero {
-        min-height: 100svh;
-        padding: 55px 18px 40px;
+  <style>
+    :root {
+      --navy: #103b70;
+      --blue: #1769d2;
+      --light: #edf5ff;
+      --yellow: #ffcf40;
+      --text: #26354a;
+      --muted: #627087;
+      --white: #ffffff;
+      --border: #e0e8f2;
+      --green: #168c50;
     }
 
-    .top-label {
-        font-size: 11px;
-        padding: 9px 13px;
-        margin-bottom: 22px;
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    html {
+      scroll-behavior: smooth;
+      scroll-padding-top: 85px;
+    }
+
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      background: #fff;
+      color: var(--text);
+      line-height: 1.7;
+      overflow-wrap: break-word;
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+
+    a, button {
+      -webkit-tap-highlight-color: transparent;
+    }
+
+    .container {
+      width: min(1120px, 92%);
+      margin: auto;
+    }
+
+    .topbar {
+      background: var(--navy);
+      color: white;
+      text-align: center;
+      padding: 8px 12px;
+      font-size: 13px;
+    }
+
+    header {
+      background: white;
+      border-bottom: 1px solid var(--border);
+      position: sticky;
+      top: 0;
+      z-index: 20;
+    }
+
+    .navbar {
+      min-height: 76px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 18px;
+    }
+
+    .brand {
+      display: flex;
+      align-items: center;
+      gap: 11px;
+      min-width: 0;
+    }
+
+    .brand-icon {
+      width: 46px;
+      height: 46px;
+      flex-shrink: 0;
+      border-radius: 13px;
+      display: grid;
+      place-items: center;
+      color: var(--navy);
+      background: var(--yellow);
+      font-size: 29px;
+      font-weight: 900;
+    }
+
+    .brand-name {
+      display: block;
+      color: var(--navy);
+      font-size: 20px;
+      font-weight: 800;
+      line-height: 1.25;
+    }
+
+    .brand small {
+      display: block;
+      color: var(--muted);
+      font-size: 10px;
+      letter-spacing: .7px;
+      margin-top: 4px;
+    }
+
+    .nav-links {
+      display: flex;
+      align-items: center;
+      gap: 20px;
+      font-size: 14px;
+      font-weight: 600;
+    }
+
+    .nav-links a:hover {
+      color: var(--blue);
+    }
+
+    .nav-links .nav-cta {
+      background: var(--blue);
+      color: white;
+      border-radius: 8px;
+      padding: 10px 14px;
+    }
+
+    .menu-toggle {
+      display: none;
+      background: var(--light);
+      color: var(--navy);
+      border: 0;
+      border-radius: 8px;
+      padding: 8px 12px;
+      font-size: 24px;
+      cursor: pointer;
+    }
+
+    .hero {
+      background: linear-gradient(135deg, #edf5ff, #fff 60%, #e2efff);
+      padding: 75px 0 80px;
+    }
+
+    .hero-grid {
+      display: grid;
+      grid-template-columns: 1.15fr .85fr;
+      align-items: center;
+      gap: 45px;
+    }
+
+    .eyebrow {
+      display: inline-block;
+      background: #dceaff;
+      color: var(--navy);
+      padding: 7px 13px;
+      border-radius: 30px;
+      font-size: 12px;
+      font-weight: 800;
+      letter-spacing: 1px;
+      margin-bottom: 19px;
     }
 
     h1 {
-        font-size: clamp(37px, 10vw, 52px);
-        letter-spacing: -1.5px;
-        margin-bottom: 18px;
+      color: var(--navy);
+      font-size: clamp(35px, 5vw, 59px);
+      line-height: 1.12;
+      letter-spacing: -1.5px;
+      margin-bottom: 22px;
     }
 
-    .hero-description {
+    h1 span {
+      color: var(--blue);
+    }
+
+    .hero p {
+      color: var(--muted);
+      font-size: 17px;
+      max-width: 570px;
+      margin-bottom: 27px;
+    }
+
+    .actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 13px;
+      align-items: center;
+    }
+
+    .btn {
+      min-height: 49px;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 9px;
+      border-radius: 9px;
+      padding: 12px 20px;
+      font-size: 14px;
+      font-weight: 700;
+      text-align: center;
+      transition: background .2s ease;
+    }
+
+    .btn-whatsapp {
+      background: var(--green);
+      color: white;
+    }
+
+    .btn-whatsapp:hover {
+      background: #107340;
+    }
+
+    .btn-outline {
+      border: 1px solid #b9cce5;
+      background: white;
+      color: var(--navy);
+    }
+
+    .hero-note {
+      font-size: 12px !important;
+      margin-top: 16px;
+      margin-bottom: 0 !important;
+    }
+
+    .hero-visual {
+      min-height: 350px;
+      border-radius: 26px;
+      background: var(--navy);
+      padding: 30px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      position: relative;
+      isolation: isolate;
+      overflow: hidden;
+    }
+
+    .hero-visual::before,
+    .hero-visual::after {
+      content: "";
+      position: absolute;
+      z-index: -1;
+      border: 1px solid rgba(255,255,255,.13);
+      border-radius: 50%;
+    }
+
+    .hero-visual::before {
+      width: 280px;
+      height: 280px;
+    }
+
+    .hero-visual::after {
+      width: 220px;
+      height: 220px;
+    }
+
+    .electric-symbol {
+      width: 155px;
+      height: 155px;
+      border-radius: 35px;
+      display: grid;
+      place-items: center;
+      background: var(--yellow);
+      color: var(--navy);
+      font-size: 95px;
+      line-height: 1;
+      transform: rotate(-5deg);
+      box-shadow: 0 20px 50px rgba(0,0,0,.2);
+    }
+
+    .visual-label {
+      position: absolute;
+      bottom: 22px;
+      left: 20px;
+      right: 20px;
+      text-align: center;
+      color: white;
+      font-size: 14px;
+      font-weight: 700;
+    }
+
+    .section {
+      padding: 76px 0;
+    }
+
+    .section-soft {
+      background: #f5f8fd;
+    }
+
+    .section-heading {
+      max-width: 700px;
+      margin: 0 auto 38px;
+      text-align: center;
+    }
+
+    .section-heading .eyebrow {
+      margin-bottom: 12px;
+    }
+
+    h2 {
+      font-size: clamp(27px, 4vw, 39px);
+      color: var(--navy);
+      line-height: 1.25;
+      margin-bottom: 13px;
+    }
+
+    .section-heading p,
+    .body-copy {
+      color: var(--muted);
+      font-size: 15px;
+    }
+
+    .service-grid {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 20px;
+    }
+
+    .service-card {
+      background: white;
+      border: 1px solid var(--border);
+      border-radius: 15px;
+      padding: 26px 22px;
+      transition: border-color .2s ease;
+    }
+
+    .service-card:hover {
+      border-color: #9bbce9;
+    }
+
+    .service-icon {
+      width: 52px;
+      height: 52px;
+      display: grid;
+      place-items: center;
+      border-radius: 13px;
+      background: var(--light);
+      color: var(--blue);
+      font-size: 26px;
+      margin-bottom: 18px;
+    }
+
+    h3 {
+      color: var(--navy);
+      font-size: 19px;
+      line-height: 1.4;
+      margin-bottom: 10px;
+    }
+
+    .service-card p {
+      color: var(--muted);
+      font-size: 14px;
+    }
+
+    .about-grid {
+      display: grid;
+      grid-template-columns: .85fr 1.15fr;
+      gap: 45px;
+      align-items: center;
+    }
+
+    .about-panel {
+      padding: 32px;
+      border-radius: 20px;
+      background: var(--navy);
+      color: white;
+    }
+
+    .about-panel .big-symbol {
+      font-size: 65px;
+      color: var(--yellow);
+      line-height: 1.3;
+    }
+
+    .about-panel h3 {
+      color: white;
+      font-size: 25px;
+      margin-top: 15px;
+    }
+
+    .about-panel p {
+      color: #dce7f6;
+      font-size: 14px;
+    }
+
+    .about-content h2 {
+      margin-bottom: 17px;
+    }
+
+    .about-content p {
+      color: var(--muted);
+      font-size: 15px;
+      margin-bottom: 15px;
+    }
+
+    .check-list {
+      list-style: none;
+      display: grid;
+      gap: 11px;
+      margin-top: 20px;
+    }
+
+    .check-list li {
+      display: flex;
+      gap: 10px;
+      align-items: flex-start;
+      font-size: 14px;
+    }
+
+    .check-list li span {
+      color: #14834b;
+      font-weight: 800;
+    }
+
+    .why-grid {
+      display: grid;
+      grid-template-columns: repeat(4, minmax(0, 1fr));
+      gap: 15px;
+    }
+
+    .why-item {
+      border-left: 3px solid var(--blue);
+      padding: 18px;
+      background: white;
+      border-radius: 0 12px 12px 0;
+    }
+
+    .why-item h3 {
+      font-size: 16px;
+    }
+
+    .why-item p {
+      font-size: 13px;
+      color: var(--muted);
+    }
+
+    .steps {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 20px;
+    }
+
+    .step {
+      padding: 25px;
+      border: 1px solid var(--border);
+      border-radius: 14px;
+      background: white;
+    }
+
+    .step-number {
+      width: 38px;
+      height: 38px;
+      display: grid;
+      place-items: center;
+      border-radius: 50%;
+      background: var(--yellow);
+      color: var(--navy);
+      font-weight: 900;
+      margin-bottom: 16px;
+    }
+
+    .step p {
+      color: var(--muted);
+      font-size: 14px;
+    }
+
+    .faq-list {
+      max-width: 820px;
+      margin: auto;
+      display: grid;
+      gap: 12px;
+    }
+
+    details {
+      border: 1px solid var(--border);
+      border-radius: 10px;
+      padding: 17px 19px;
+      background: white;
+    }
+
+    summary {
+      color: var(--navy);
+      font-weight: 700;
+      cursor: pointer;
+    }
+
+    details p {
+      color: var(--muted);
+      padding-top: 12px;
+      font-size: 14px;
+    }
+
+    .contact-box {
+      display: grid;
+      grid-template-columns: 1fr .9fr;
+      gap: 35px;
+      background: var(--navy);
+      border-radius: 22px;
+      padding: 38px;
+      color: white;
+    }
+
+    .contact-box h2,
+    .contact-box h3 {
+      color: white;
+    }
+
+    .contact-box p {
+      color: #dce7f6;
+      font-size: 14px;
+    }
+
+    .contact-details {
+      display: grid;
+      gap: 15px;
+      align-content: center;
+    }
+
+    .contact-row {
+      background: rgba(255,255,255,.08);
+      padding: 16px;
+      border-radius: 10px;
+      overflow-wrap: anywhere;
+    }
+
+    .contact-row strong {
+      display: block;
+      color: var(--yellow);
+      font-size: 12px;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      margin-bottom: 4px;
+    }
+
+    .contact-row a {
+      color: white;
+      text-decoration: underline;
+      text-underline-offset: 3px;
+    }
+
+    .policy-section {
+      border-top: 1px solid var(--border);
+      padding: 60px 0;
+    }
+
+    .policy-grid {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 22px;
+    }
+
+    .policy-card {
+      padding: 22px;
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      scroll-margin-top: 100px;
+    }
+
+    .policy-card h3 {
+      font-size: 18px;
+    }
+
+    .policy-card p {
+      color: var(--muted);
+      font-size: 13px;
+    }
+
+    footer {
+      background: #09294e;
+      color: #dce7f6;
+      padding: 28px 0;
+    }
+
+    .footer-inner {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 20px;
+      flex-wrap: wrap;
+    }
+
+    .footer-inner p {
+      font-size: 12px;
+    }
+
+    .footer-links {
+      display: flex;
+      gap: 15px;
+      flex-wrap: wrap;
+      font-size: 12px;
+    }
+
+    .footer-links a:hover {
+      color: var(--yellow);
+    }
+
+    :focus-visible {
+      outline: 3px solid #ffbf38;
+      outline-offset: 3px;
+    }
+
+    @media (max-width: 900px) {
+      .nav-links {
+        gap: 11px;
+        font-size: 13px;
+      }
+
+      .hero-grid {
+        gap: 25px;
+      }
+
+      .why-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+      }
+
+      .service-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+      }
+    }
+
+    @media (max-width: 700px) {
+      html {
+        scroll-padding-top: 75px;
+      }
+
+      .navbar {
+        min-height: 68px;
+      }
+
+      .brand-name {
+        font-size: 17px;
+      }
+
+      .brand-icon {
+        width: 40px;
+        height: 40px;
+      }
+
+      .menu-toggle {
+        display: block;
+      }
+
+      .nav-links {
+        display: none;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        background: white;
+        border-bottom: 1px solid var(--border);
+        padding: 16px 4%;
+        box-shadow: 0 10px 20px rgba(16,59,112,.08);
+      }
+
+      .nav-links.open {
+        display: grid;
+        gap: 0;
+      }
+
+      .nav-links a {
+        padding: 11px 8px;
+      }
+
+      .nav-links .nav-cta {
+        text-align: center;
+        margin-top: 6px;
+      }
+
+      .hero {
+        padding: 47px 0;
+      }
+
+      .hero-grid,
+      .about-grid,
+      .contact-box {
+        grid-template-columns: 1fr;
+      }
+
+      .hero-grid {
+        gap: 30px;
+      }
+
+      h1 {
+        font-size: clamp(34px, 10vw, 48px);
+      }
+
+      .hero p {
         font-size: 15px;
-        line-height: 1.7;
-        margin-bottom: 24px;
-    }
+      }
 
-    .hero-features {
-        gap: 8px;
-        margin-bottom: 27px;
-    }
+      .hero-visual {
+        min-height: 250px;
+      }
 
-    .feature {
-        font-size: 12px;
-        padding: 10px 11px;
-    }
+      .electric-symbol {
+        width: 120px;
+        height: 120px;
+        font-size: 73px;
+      }
 
-    .whatsapp-btn {
+      .section {
+        padding: 55px 0;
+      }
+
+      .service-grid,
+      .steps,
+      .policy-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .service-card {
+        padding: 23px;
+      }
+
+      .about-grid {
+        gap: 25px;
+      }
+
+      .about-panel {
+        padding: 25px;
+      }
+
+      .contact-box {
+        padding: 24px 19px;
+        gap: 25px;
+      }
+
+      .actions .btn {
         width: 100%;
-        max-width: 330px;
-        padding: 16px 18px;
-        font-size: 15px;
+      }
+
+      .footer-inner {
+        align-items: flex-start;
+        flex-direction: column;
+      }
     }
 
-    .bottom-strip {
-        gap: 15px;
-        margin-top: 35px;
-        padding-top: 22px;
+    @media (prefers-reduced-motion: reduce) {
+      *, *::before, *::after {
+        scroll-behavior: auto !important;
+        transition: none !important;
+      }
     }
-
-    .strip-item {
-        font-size: 11px;
-    }
-}
-
-@media (prefers-reduced-motion: reduce) {
-    html {
-        scroll-behavior: auto;
-    }
-
-    .whatsapp-btn {
-        transition: none;
-    }
-}
-</style>
+  </style>
 </head>
 
 <body>
 
-<section class="hero">
-    <div class="hero-content">
+  <div class="topbar">
+    Thambi Electricals | Electrical Product Inquiries
+  </div>
 
-        <div class="top-label">
-            <span></span>
-            Your Electrical Solutions Partner
-        </div>
+  <header>
+    <div class="container navbar">
+      <a class="brand" href="#home" aria-label="Thambi Electricals Home">
+        <span class="brand-icon" aria-hidden="true">ϟ</span>
+        <span>
+          <span class="brand-name">Thambi Electricals</span>
+          <small>ELECTRICAL PRODUCTS &amp; INQUIRIES</small>
+        </span>
+      </a>
 
-        <h1>
-            Welcome to
-            <span class="highlight">Thambi Electricals</span>
-        </h1>
+      <button class="menu-toggle" id="menuToggle"
+        aria-label="Open navigation menu"
+        aria-expanded="false" aria-controls="navLinks">
+        ☰
+      </button>
 
-        <p class="hero-description">
-            Discover quality electrical products and reliable electrical
-            solutions for your home, office and business. Contact us today
-            for product enquiries and assistance.
-        </p>
-
-        <div class="hero-features">
-            <div class="feature">
-                <span>✓</span> Quality Products
-            </div>
-            <div class="feature">
-                <span>✓</span> Customer Support
-            </div>
-            <div class="feature">
-                <span>✓</span> Reliable Solutions
-            </div>
-        </div>
-
-        <a class="whatsapp-btn"
-           href="https://wa.me/910000000000?text=Hi%2C%20I%20want%20more%20information%20about%20Thambi%20Electricals."
-           target="_blank"
-           rel="noopener noreferrer"
-           aria-label="Contact Thambi Electricals on WhatsApp">
-
-            <svg viewBox="0 0 32 32" fill="currentColor"
-                 aria-hidden="true">
-                <path d="M16 .8A15.1 15.1 0 0 0 3.05 23.68L1 31l7.5-1.97A15.2 15.2 0 1 0 16 .8zm0 27.55c-2.34 0-4.62-.63-6.6-1.82l-.47-.28-4.45 1.17 1.19-4.33-.31-.5A12.45 12.45 0 1 1 16 28.35zm6.83-9.32c-.37-.19-2.2-1.08-2.54-1.2-.34-.12-.59-.18-.84.19-.25.37-.96 1.2-1.18 1.45-.22.25-.44.28-.81.09-.37-.18-1.57-.58-2.99-1.85-1.1-.98-1.84-2.2-2.06-2.57-.22-.37-.02-.57.17-.75.17-.17.37-.44.56-.66.19-.22.25-.37.37-.62.12-.25.06-.47-.03-.66-.1-.18-.84-2.02-1.15-2.77-.3-.72-.61-.62-.84-.63h-.72c-.25 0-.66.1-1 .47-.34.37-1.31 1.28-1.31 3.12 0 1.83 1.34 3.6 1.53 3.85.19.25 2.64 4.03 6.39 5.65.89.38 1.58.61 2.12.78.89.28 1.7.24 2.34.15.71-.11 2.2-.9 2.51-1.77.31-.87.31-1.61.22-1.77-.09-.15-.34-.25-.71-.43z"/>
-            </svg>
-
-            Chat on WhatsApp
-        </a>
-
-        <p class="contact-note">
-            Have a question? Message us directly on WhatsApp.
-        </p>
-
-        <div class="bottom-strip">
-            <div class="strip-item">
-                <strong>✓</strong> Quality Focus
-            </div>
-            <div class="strip-item">
-                <strong>✓</strong> Helpful Support
-            </div>
-            <div class="strip-item">
-                <strong>✓</strong> Easy Enquiries
-            </div>
-        </div>
-
+      <nav class="nav-links" id="navLinks" aria-label="Main navigation">
+        <a href="#home">Home</a>
+        <a href="#services">Products</a>
+        <a href="#about">About Us</a>
+        <a href="#why-us">Why Choose Us</a>
+        <a href="#faq">FAQ</a>
+        <a href="#contact">Contact</a>
+        <a class="nav-cta"
+          href="https://wa.me/917386179988?text=Hello%20Thambi%20Electricals%2C%20I%20want%20more%20information%20about%20your%20electrical%20products."
+          target="_blank" rel="noopener noreferrer">WhatsApp Inquiry</a>
+      </nav>
     </div>
-</section>
+  </header>
 
-<style>
-.services-section {
-    padding: 75px 20px;
-    background: #ffffff;
-    font-family: Arial, Helvetica, sans-serif;
-    color: #08234d;
-}
+  <main>
 
-.services-container {
-    max-width: 1150px;
-    margin: auto;
-}
+    <!-- HERO SECTION -->
+    <section class="hero" id="home">
+      <div class="container hero-grid">
+        <div>
+          <span class="eyebrow">WELCOME TO THAMBI ELECTRICALS</span>
 
-.services-heading {
-    text-align: center;
-    margin-bottom: 45px;
-}
+          <h1>Electrical Products &amp; <span>Helpful Assistance</span></h1>
 
-.services-tag {
-    display: inline-block;
-    padding: 9px 17px;
-    background: #e8f1ff;
-    color: #0755c9;
-    border-radius: 30px;
-    font-size: 12px;
-    font-weight: bold;
-    letter-spacing: 1px;
-    margin-bottom: 16px;
-}
+          <p>
+            Looking for information about electrical products?
+            Contact Thambi Electricals to ask about product availability,
+            specifications, pricing and other purchase-related details.
+          </p>
 
-.services-heading h2 {
-    font-size: clamp(30px, 5vw, 46px);
-    line-height: 1.2;
-    margin: 0 0 15px;
-    letter-spacing: -1px;
-}
+          <div class="actions">
+            <a class="btn btn-whatsapp"
+              href="https://wa.me/917386179988?text=Hello%20Thambi%20Electricals%2C%20I%20want%20more%20information%20about%20your%20electrical%20products."
+              target="_blank" rel="noopener noreferrer">
+              <span aria-hidden="true">◉</span> Inquire on WhatsApp
+            </a>
 
-.services-heading h2 span {
-    color: #0755c9;
-}
+            <a class="btn btn-outline" href="tel:+917386179988">
+              Call for Inquiry
+            </a>
+          </div>
 
-.services-heading p {
-    max-width: 600px;
-    margin: auto;
-    font-size: 15px;
-    line-height: 1.8;
-    color: #63738b;
-}
+          <p class="hero-note">
+            Contact us for product details, availability and applicable prices.
+          </p>
+        </div>
 
-.services-grid {
-    display: grid;
-    grid-template-columns: repeat(3, minmax(0, 1fr));
-    gap: 22px;
-}
+        <div class="hero-visual" aria-label="Electrical-themed illustration">
+          <div class="electric-symbol" aria-hidden="true">ϟ</div>
+          <div class="visual-label">
+            Thambi Electricals · Product Information &amp; Support
+          </div>
+        </div>
+      </div>
+    </section>
 
-.service-card {
-    position: relative;
-    padding: 30px 25px;
-    border: 1px solid #e0eaf8;
-    border-radius: 18px;
-    background: linear-gradient(145deg, #ffffff, #f5f9ff);
-    transition: transform 0.2s ease, box-shadow 0.2s ease;
-    overflow: hidden;
-}
+    <!-- PRODUCTS AND SERVICES -->
+    <section class="section" id="services">
+      <div class="container">
+        <div class="section-heading">
+          <span class="eyebrow">WHAT YOU CAN INQUIRE ABOUT</span>
+          <h2>Electrical Products &amp; Categories</h2>
+          <p>
+            Contact us to confirm which products are available, their
+            specifications and whether they meet your requirements.
+          </p>
+        </div>
 
-.service-card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 12px 30px rgba(7, 85, 201, 0.10);
-}
-
-.service-number {
-    position: absolute;
-    top: 17px;
-    right: 20px;
-    font-size: 30px;
-    font-weight: 800;
-    color: #e5edfa;
-}
-
-.service-icon {
-    width: 62px;
-    height: 62px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background: #0755c9;
-    color: white;
-    border-radius: 16px;
-    margin-bottom: 22px;
-}
-
-.service-icon svg {
-    width: 31px;
-    height: 31px;
-}
-
-.service-card h3 {
-    font-size: 19px;
-    margin: 0 0 12px;
-    line-height: 1.4;
-}
-
-.service-card p {
-    color: #64748b;
-    font-size: 14px;
-    line-height: 1.8;
-    margin: 0 0 20px;
-}
-
-.service-link {
-    display: inline-flex;
-    align-items: center;
-    gap: 7px;
-    color: #0755c9;
-    font-size: 13px;
-    font-weight: bold;
-    text-decoration: none;
-}
-
-.service-link:hover {
-    color: #003b92;
-}
-
-.services-cta {
-    margin-top: 40px;
-    padding: 32px 25px;
-    background: #08234d;
-    color: #ffffff;
-    border-radius: 20px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    gap: 22px;
-}
-
-.services-cta h3 {
-    font-size: 23px;
-    margin: 0 0 9px;
-}
-
-.services-cta p {
-    color: #d0ddf1;
-    font-size: 14px;
-    line-height: 1.7;
-    margin: 0;
-}
-
-.services-whatsapp {
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    gap: 9px;
-    flex-shrink: 0;
-    background: #20c766;
-    color: #ffffff;
-    text-decoration: none;
-    padding: 15px 20px;
-    border-radius: 10px;
-    font-size: 14px;
-    font-weight: bold;
-}
-
-.services-whatsapp:hover {
-    background: #17ae55;
-}
-
-@media (max-width: 850px) {
-    .services-grid {
-        grid-template-columns: repeat(2, minmax(0, 1fr));
-        gap: 16px;
-    }
-
-    .service-card {
-        padding: 25px 20px;
-    }
-}
-
-@media (max-width: 560px) {
-    .services-section {
-        padding: 55px 16px;
-    }
-
-    .services-heading {
-        margin-bottom: 30px;
-    }
-
-    .services-heading p {
-        font-size: 14px;
-    }
-
-    .services-grid {
-        grid-template-columns: 1fr;
-        gap: 15px;
-    }
-
-    .service-card {
-        padding: 24px;
-        border-radius: 15px;
-    }
-
-    .service-icon {
-        width: 55px;
-        height: 55px;
-        margin-bottom: 17px;
-    }
-
-    .service-card h3 {
-        font-size: 18px;
-    }
-
-    .services-cta {
-        padding: 25px 20px;
-        flex-direction: column;
-        align-items: flex-start;
-    }
-
-    .services-cta h3 {
-        font-size: 21px;
-    }
-
-    .services-whatsapp {
-        width: 100%;
-    }
-}
-
-@media (prefers-reduced-motion: reduce) {
-    .service-card {
-        transition: none;
-    }
-}
-</style>
-
-<section class="services-section" id="services">
-    <div class="services-container">
-
-        <div class="services-heading">
-            <span class="services-tag">WHAT WE OFFER</span>
-            <h2>Our Electrical <span>Services</span></h2>
+        <div class="service-grid">
+          <article class="service-card">
+            <div class="service-icon" aria-hidden="true">ϟ</div>
+            <h3>Wires &amp; Cables</h3>
             <p>
-                Explore electrical products and solutions from
-                Thambi Electricals. Contact our team for product
-                availability, enquiries and assistance.
+              Ask about wire and cable options, sizes, specifications
+              and availability for your intended application.
             </p>
+          </article>
+
+          <article class="service-card">
+            <div class="service-icon" aria-hidden="true">▤</div>
+            <h3>Switches &amp; Sockets</h3>
+            <p>
+              Inquire about electrical switches, sockets and compatible
+              options for residential or commercial requirements.
+            </p>
+          </article>
+
+          <article class="service-card">
+            <div class="service-icon" aria-hidden="true">☼</div>
+            <h3>Lighting Products</h3>
+            <p>
+              Ask about available lighting products, bulb types,
+              lighting specifications and current prices.
+            </p>
+          </article>
+
+          <article class="service-card">
+            <div class="service-icon" aria-hidden="true">▦</div>
+            <h3>Electrical Accessories</h3>
+            <p>
+              Get information about electrical accessories and
+              suitable product options for your requirements.
+            </p>
+          </article>
+
+          <article class="service-card">
+            <div class="service-icon" aria-hidden="true">⚡</div>
+            <h3>Electrical Components</h3>
+            <p>
+              Ask about component specifications, compatibility and
+              availability before making a purchase.
+            </p>
+          </article>
+
+          <article class="service-card">
+            <div class="service-icon" aria-hidden="true">☏</div>
+            <h3>Product Inquiries</h3>
+            <p>
+              Contact us for product-related questions, price inquiries
+              and further information about available items.
+            </p>
+          </article>
         </div>
 
-        <div class="services-grid">
+        <p class="body-copy" style="text-align:center;margin-top:25px;font-size:12px">
+          Product categories are indicative. Confirm actual stock, brands
+          and specifications directly before purchasing.
+        </p>
+      </div>
+    </section>
 
-            <!-- Service 1 -->
-            <div class="service-card">
-                <span class="service-number">01</span>
-                <div class="service-icon">
-                    <svg viewBox="0 0 24 24" fill="none"
-                         stroke="currentColor" stroke-width="1.8"
-                         stroke-linecap="round" stroke-linejoin="round">
-                        <path d="M9 18h6M10 22h4M8 14a7 7 0 1 1 8 0c-1 1-1 2-1 4h-6c0-2-1-3-1-4Z"/>
-                    </svg>
-                </div>
-                <h3>Lighting Solutions</h3>
-                <p>
-                    Explore lighting options for homes, offices and
-                    commercial spaces. Ask us about available products.
-                </p>
-               
-            </div>
-
-            <!-- Service 2 -->
-            <div class="service-card">
-                <span class="service-number">02</span>
-                <div class="service-icon">
-                    <svg viewBox="0 0 24 24" fill="none"
-                         stroke="currentColor" stroke-width="1.8"
-                         stroke-linecap="round" stroke-linejoin="round">
-                        <rect x="5" y="2" width="14" height="20" rx="2"/>
-                        <path d="M9 6h6M9 10h6M9 14h2M9 18h6"/>
-                    </svg>
-                </div>
-                <h3>Switches & Sockets</h3>
-                <p>
-                    Find switches, sockets and related electrical
-                    accessories to suit different requirements.
-                </p>
-               
-            </div>
-
-            <!-- Service 3 -->
-            <div class="service-card">
-                <span class="service-number">03</span>
-                <div class="service-icon">
-                    <svg viewBox="0 0 24 24" fill="none"
-                         stroke="currentColor" stroke-width="1.8"
-                         stroke-linecap="round" stroke-linejoin="round">
-                        <path d="M13 2 4 14h7l-1 8 10-13h-7l0-7Z"/>
-                    </svg>
-                </div>
-                <h3>Wires & Cables</h3>
-                <p>
-                    Enquire about wires and cables for suitable
-                    residential and commercial electrical needs.
-                </p>
-               
-            </div>
-
-            <!-- Service 4 -->
-            <div class="service-card">
-                <span class="service-number">04</span>
-                <div class="service-icon">
-                    <svg viewBox="0 0 24 24" fill="none"
-                         stroke="currentColor" stroke-width="1.8"
-                         stroke-linecap="round" stroke-linejoin="round">
-                        <rect x="3" y="4" width="18" height="16" rx="2"/>
-                        <path d="M8 8v8M16 8v8M8 12h8"/>
-                    </svg>
-                </div>
-                <h3>Electrical Accessories</h3>
-                <p>
-                    Ask us about electrical fittings, accessories
-                    and essential products for your projects.
-                </p>
-                
-            </div>
-
-            <!-- Service 5 -->
-            <div class="service-card">
-                <span class="service-number">05</span>
-                <div class="service-icon">
-                    <svg viewBox="0 0 24 24" fill="none"
-                         stroke="currentColor" stroke-width="1.8"
-                         stroke-linecap="round" stroke-linejoin="round">
-                        <path d="M12 3 3 8l9 5 9-5-9-5Z"/>
-                        <path d="m3 12 9 5 9-5M3 16l9 5 9-5"/>
-                    </svg>
-                </div>
-                <h3>Electrical Products</h3>
-                <p>
-                    Discover electrical products for everyday use.
-                    Contact us to check availability and pricing.
-                </p>
-               
-            </div>
-
-            <!-- Service 6 -->
-            <div class="service-card">
-                <span class="service-number">06</span>
-                <div class="service-icon">
-                    <svg viewBox="0 0 24 24" fill="none"
-                         stroke="currentColor" stroke-width="1.8"
-                         stroke-linecap="round" stroke-linejoin="round">
-                        <path d="M12 22s8-4 8-11V5l-8-3-8 3v6c0 7 8 11 8 11Z"/>
-                        <path d="m9 12 2 2 4-4"/>
-                    </svg>
-                </div>
-                <h3>Product Guidance</h3>
-                <p>
-                    Get help with product enquiries so you can
-                    explore options for your electrical requirements.
-                </p>
-              
-            </div>
-
+    <!-- ABOUT US -->
+    <section class="section section-soft" id="about">
+      <div class="container about-grid">
+        <div class="about-panel">
+          <div class="big-symbol" aria-hidden="true">ϟ</div>
+          <h3>Welcome to Thambi Electricals</h3>
+          <p>
+            Your point of contact for electrical product information
+            and purchase-related inquiries.
+          </p>
         </div>
 
-        <div class="services-cta">
-            <div>
-                <h3>Looking for Electrical Products?</h3>
-                <p>Contact Thambi Electricals on WhatsApp for enquiries and product details.</p>
-            </div>
-
-          
-        </div>
-
-    </div>
-</section>
-
-
-<style>
-.about-section {
-    padding: 80px 20px;
-    background: #f1f6ff;
-    font-family: Arial, Helvetica, sans-serif;
-    color: #08234d;
-}
-
-.about-container {
-    max-width: 1120px;
-    margin: auto;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 55px;
-    align-items: center;
-}
-
-.about-visual {
-    min-height: 370px;
-    position: relative;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 30px;
-    background: linear-gradient(145deg, #0755c9, #092a63);
-    border-radius: 28px;
-    overflow: hidden;
-}
-
-.about-visual::before,
-.about-visual::after {
-    content: "";
-    position: absolute;
-    border: 1px solid rgba(255,255,255,0.18);
-    border-radius: 50%;
-}
-
-.about-visual::before {
-    width: 290px;
-    height: 290px;
-}
-
-.about-visual::after {
-    width: 210px;
-    height: 210px;
-}
-
-.about-symbol {
-    position: relative;
-    z-index: 1;
-    width: 125px;
-    height: 125px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background: #ffffff;
-    border-radius: 30px;
-    box-shadow: 0 18px 45px rgba(0,0,0,0.18);
-    transform: rotate(-5deg);
-}
-
-.about-symbol svg {
-    width: 76px;
-    height: 76px;
-    color: #0755c9;
-}
-
-.about-mini-card {
-    position: absolute;
-    z-index: 2;
-    background: #ffffff;
-    color: #08234d;
-    border-radius: 13px;
-    padding: 15px 18px;
-    box-shadow: 0 10px 30px rgba(0,0,0,0.13);
-    font-size: 13px;
-    font-weight: bold;
-}
-
-.about-mini-card.card-top {
-    top: 25px;
-    left: 20px;
-}
-
-.about-mini-card.card-bottom {
-    bottom: 25px;
-    right: 20px;
-}
-
-.about-mini-card span {
-    color: #0755c9;
-    margin-right: 6px;
-}
-
-.about-content .about-label {
-    display: inline-block;
-    padding: 9px 16px;
-    background: #dceaff;
-    color: #0755c9;
-    border-radius: 30px;
-    font-size: 12px;
-    font-weight: bold;
-    letter-spacing: 1px;
-    margin-bottom: 18px;
-}
-
-.about-content h2 {
-    font-size: clamp(31px, 4vw, 45px);
-    line-height: 1.2;
-    letter-spacing: -1px;
-    margin: 0 0 22px;
-}
-
-.about-content h2 span {
-    color: #0755c9;
-}
-
-.about-content p {
-    color: #5d6f89;
-    font-size: 15px;
-    line-height: 1.9;
-    margin: 0 0 17px;
-}
-
-.about-points {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 14px;
-    margin-top: 25px;
-}
-
-.about-point {
-    display: flex;
-    align-items: flex-start;
-    gap: 10px;
-    padding: 15px 12px;
-    background: #ffffff;
-    border: 1px solid #e0eaf8;
-    border-radius: 12px;
-    font-size: 13px;
-    font-weight: bold;
-    line-height: 1.5;
-}
-
-.about-check {
-    flex-shrink: 0;
-    width: 23px;
-    height: 23px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background: #e4efff;
-    color: #0755c9;
-    border-radius: 50%;
-    font-size: 13px;
-}
-
-.about-bottom {
-    margin-top: 27px;
-    padding-top: 23px;
-    border-top: 1px solid #d7e3f5;
-    display: flex;
-    align-items: center;
-    gap: 13px;
-}
-
-.about-bottom-icon {
-    width: 45px;
-    height: 45px;
-    background: #0755c9;
-    color: #ffffff;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border-radius: 12px;
-    font-size: 22px;
-    flex-shrink: 0;
-}
-
-.about-bottom strong {
-    display: block;
-    font-size: 14px;
-    margin-bottom: 5px;
-}
-
-.about-bottom small {
-    color: #657791;
-    font-size: 12px;
-    line-height: 1.6;
-}
-
-@media (max-width: 800px) {
-    .about-section {
-        padding: 60px 18px;
-    }
-
-    .about-container {
-        grid-template-columns: 1fr;
-        gap: 35px;
-    }
-
-    .about-visual {
-        min-height: 300px;
-    }
-
-    .about-content h2 {
-        font-size: 35px;
-    }
-}
-
-@media (max-width: 480px) {
-    .about-section {
-        padding: 48px 16px;
-    }
-
-    .about-visual {
-        min-height: 255px;
-        border-radius: 20px;
-    }
-
-    .about-visual::before {
-        width: 220px;
-        height: 220px;
-    }
-
-    .about-visual::after {
-        width: 160px;
-        height: 160px;
-    }
-
-    .about-symbol {
-        width: 95px;
-        height: 95px;
-        border-radius: 23px;
-    }
-
-    .about-symbol svg {
-        width: 60px;
-        height: 60px;
-    }
-
-    .about-mini-card {
-        padding: 11px;
-        font-size: 11px;
-    }
-
-    .about-mini-card.card-top {
-        top: 15px;
-        left: 12px;
-    }
-
-    .about-mini-card.card-bottom {
-        bottom: 15px;
-        right: 12px;
-    }
-
-    .about-content h2 {
-        font-size: 31px;
-    }
-
-    .about-content p {
-        font-size: 14px;
-    }
-
-    .about-points {
-        grid-template-columns: 1fr;
-        gap: 10px;
-    }
-}
-</style>
-
-<section class="about-section" id="about">
-    <div class="about-container">
-
-        <!-- CSS ELECTRICAL ILLUSTRATION -->
-        <div class="about-visual">
-
-            <div class="about-mini-card card-top">
-                <span>✓</span> Quality Focus
-            </div>
-
-            <div class="about-symbol">
-                <svg viewBox="0 0 100 100" fill="none"
-                     stroke="currentColor" stroke-width="4"
-                     stroke-linecap="round" stroke-linejoin="round"
-                     aria-hidden="true">
-                    <path d="M57 7 25 53h23l-5 40 32-49H52l5-37Z"/>
-                </svg>
-            </div>
-
-            <div class="about-mini-card card-bottom">
-                <span>✓</span> Customer First
-            </div>
-
-        </div>
-
-        <!-- ABOUT CONTENT -->
         <div class="about-content">
+          <span class="eyebrow">ABOUT OUR BUSINESS</span>
+          <h2>Making Electrical Product Inquiries Simple</h2>
 
-            <span class="about-label">ABOUT OUR BUSINESS</span>
+          <p>
+            Thambi Electricals provides a convenient way for customers
+            to inquire about electrical products and related information.
+            We aim to help customers understand product options before
+            deciding what to purchase.
+          </p>
 
-            <h2>
-                Get to Know
-                <span>Thambi Electricals</span>
-            </h2>
+          <p>
+            Whether you want to ask about product specifications,
+            availability or pricing, you can contact us directly
+            using our inquiry number.
+          </p>
 
-            <p>
-                Welcome to Thambi Electricals, your destination for
-                electrical products and solutions. We aim to make it
-                easier for customers to explore electrical essentials
-                for their homes, offices and business requirements.
-            </p>
+          <ul class="check-list">
+            <li><span>✓</span> Direct contact for product inquiries</li>
+            <li><span>✓</span> Information about availability and specifications</li>
+            <li><span>✓</span> Convenient WhatsApp inquiry option</li>
+            <li><span>✓</span> Opportunity to clarify details before purchase</li>
+          </ul>
+        </div>
+      </div>
+    </section>
 
-            <p>
-                We believe in clear communication, helpful product
-                guidance and a customer-focused approach. Our goal
-                is to help you find suitable electrical products
-                according to your needs.
-            </p>
-
-            <div class="about-points">
-
-                <div class="about-point">
-                    <span class="about-check">✓</span>
-                    <span>Quality-Focused Products</span>
-                </div>
-
-                <div class="about-point">
-                    <span class="about-check">✓</span>
-                    <span>Customer-Focused Support</span>
-                </div>
-
-                <div class="about-point">
-                    <span class="about-check">✓</span>
-                    <span>Helpful Product Guidance</span>
-                </div>
-
-                <div class="about-point">
-                    <span class="about-check">✓</span>
-                    <span>Simple Enquiry Process</span>
-                </div>
-
-            </div>
-
-            <div class="about-bottom">
-                <div class="about-bottom-icon">⚡</div>
-                <div>
-                    <strong>Thambi Electricals</strong>
-                    <small>Electrical Products & Customer Assistance</small>
-                </div>
-            </div>
-
+    <!-- WHY CHOOSE US -->
+    <section class="section" id="why-us">
+      <div class="container">
+        <div class="section-heading">
+          <span class="eyebrow">OUR APPROACH</span>
+          <h2>Why Contact Thambi Electricals?</h2>
+          <p>
+            We want customers to have a straightforward way to ask
+            questions and understand product details before buying.
+          </p>
         </div>
 
+        <div class="why-grid">
+          <article class="why-item">
+            <h3>Direct Communication</h3>
+            <p>Contact us directly with your product questions.</p>
+          </article>
+
+          <article class="why-item">
+            <h3>Product Information</h3>
+            <p>Ask about specifications and available options.</p>
+          </article>
+
+          <article class="why-item">
+            <h3>Price Inquiries</h3>
+            <p>Request current pricing before placing an order.</p>
+          </article>
+
+          <article class="why-item">
+            <h3>Convenient Contact</h3>
+            <p>Use WhatsApp or telephone for inquiries.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- INQUIRY PROCESS -->
+    <section class="section section-soft" id="how-it-works">
+      <div class="container">
+        <div class="section-heading">
+          <span class="eyebrow">SIMPLE PROCESS</span>
+          <h2>How to Make an Inquiry</h2>
+          <p>Get started by sharing what you want to know about a product.</p>
+        </div>
+
+        <div class="steps">
+          <article class="step">
+            <div class="step-number">1</div>
+            <h3>Contact Us</h3>
+            <p>Open WhatsApp or call our inquiry number.</p>
+          </article>
+
+          <article class="step">
+            <div class="step-number">2</div>
+            <h3>Share Your Requirement</h3>
+            <p>Tell us the product name, specifications or quantity you need.</p>
+          </article>
+
+          <article class="step">
+            <div class="step-number">3</div>
+            <h3>Confirm the Details</h3>
+            <p>Check availability, applicable pricing and purchase terms before ordering.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="section" id="faq">
+      <div class="container">
+        <div class="section-heading">
+          <span class="eyebrow">HELP &amp; INFORMATION</span>
+          <h2>Frequently Asked Questions</h2>
+        </div>
+
+        <div class="faq-list">
+          <details>
+            <summary>How can I contact Thambi Electricals?</summary>
+            <p>
+              Call 7386179988 or use the WhatsApp inquiry button on this website.
+            </p>
+          </details>
+
+          <details>
+            <summary>How can I check product availability?</summary>
+            <p>
+              Contact us with the product name and required specifications
+              so availability can be confirmed.
+            </p>
+          </details>
+
+          <details>
+            <summary>How can I know the price of a product?</summary>
+            <p>
+              Request the current price directly. Pricing may vary according
+              to the product, specifications and applicable terms.
+            </p>
+          </details>
+
+          <details>
+            <summary>Can I ask questions before purchasing?</summary>
+            <p>
+              Yes. You can inquire about product details, availability,
+              pricing and applicable purchase conditions before deciding to buy.
+            </p>
+          </details>
+
+          <details>
+            <summary>What if I have a return or refund question?</summary>
+            <p>
+              Contact us to clarify the applicable return, replacement
+              and refund terms for your order. Applicable consumer rights remain unaffected.
+            </p>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT US -->
+    <section class="section section-soft" id="contact">
+      <div class="container">
+        <div class="contact-box">
+          <div>
+            <span class="eyebrow">GET IN TOUCH</span>
+            <h2>Contact Thambi Electricals</h2>
+
+            <p>
+              Need information about electrical products? Contact us with
+              your inquiry. Share the product name and requirements so we
+              can understand your question.
+            </p>
+
+            <div class="actions" style="margin-top:25px">
+              <a class="btn btn-whatsapp"
+                href="https://wa.me/917386179988?text=Hello%20Thambi%20Electricals%2C%20I%20want%20more%20information%20about%20your%20electrical%20products."
+                target="_blank" rel="noopener noreferrer">
+                ◉ Chat on WhatsApp
+              </a>
+
+              <a class="btn btn-outline" href="tel:+917386179988">
+                Call 7386179988
+              </a>
+            </div>
+          </div>
+
+          <div class="contact-details">
+            <div class="contact-row">
+              <strong>Business Name</strong>
+              <span>Thambi Electricals</span>
+            </div>
+
+            <div class="contact-row">
+              <strong>Inquiry Phone</strong>
+              <a href="tel:+917386179988">+91 73861 79988</a>
+            </div>
+
+            <div class="contact-row">
+              <strong>WhatsApp Inquiry</strong>
+              <a
+                href="https://wa.me/917386179988?text=Hello%20Thambi%20Electricals%2C%20I%20want%20more%20information."
+                target="_blank" rel="noopener noreferrer">
+                Message Thambi Electricals
+              </a>
+            </div>
+
+            <div class="contact-row">
+              <strong>Business Address</strong>
+              <a
+                href="https://www.google.com/maps/search/?api=1&query=18%2C+Rd+Number+3%2C+near+Apex+Hospital%2C+Man+Nagar%2C+Jhunjhunu%2C+Rajasthan+333001"
+                target="_blank" rel="noopener noreferrer">
+                18, Rd Number 3, Near Apex Hospital,
+                Man Nagar, Jhunjhunu, Rajasthan 333001
+              </a>
+            </div>
+
+            <div class="contact-row">
+              <strong>Email</strong>
+              <a href="mailto:thambielectricals@gmail.com">
+                thambielectricals@gmail.com
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PRIVACY POLICY, TERMS, DISCLAIMER AND REFUNDS -->
+    <section class="policy-section" id="policies">
+      <div class="container">
+        <div class="section-heading">
+          <span class="eyebrow">BUSINESS INFORMATION</span>
+          <h2>Policies &amp; Customer Information</h2>
+          <p>
+            Please review these policies before making a purchase or sharing
+            information. Contact us if you need clarification.
+          </p>
+        </div>
+
+        <div class="policy-grid">
+
+          <article class="policy-card" id="privacy-policy">
+            <h3>Privacy Policy</h3>
+            <p>
+              When you contact Thambi Electricals by phone or WhatsApp,
+              information you provide may be used to respond to inquiries,
+              discuss product availability and handle purchase-related
+              communication. Please avoid sharing unnecessary sensitive
+              personal information. Personal information should be handled
+              in accordance with applicable privacy laws and requirements.
+              For privacy-related questions, contact us at
+              thambielectricals@gmail.com.
+            </p>
+          </article>
+
+          <article class="policy-card" id="terms">
+            <h3>Terms &amp; Conditions</h3>
+            <p>
+              Product availability, specifications, pricing, payment,
+              delivery and other purchase terms must be confirmed before
+              an order is placed. Product information is subject to
+              confirmation. Any purchase agreement is subject to applicable
+              laws and statutory consumer rights.
+            </p>
+          </article>
+
+          <article class="policy-card" id="disclaimer">
+            <h3>Disclaimer</h3>
+            <p>
+              Information on this website is provided for general product
+              inquiries. Confirm product specifications, compatibility,
+              availability and price before purchasing. Electrical products
+              should be selected and installed according to their intended
+              use and applicable safety requirements. Use a qualified
+              electrician where appropriate.
+            </p>
+          </article>
+
+          <article class="policy-card" id="refund-policy">
+            <h3>Return, Replacement &amp; Refund Policy</h3>
+            <p>
+              Before purchasing, confirm the applicable return, replacement,
+              cancellation and refund conditions for the particular product
+              and order. For a concern about an order, contact us with the
+              relevant purchase details at thambielectricals@gmail.com or
+              7386179988. Applicable consumer protection laws and statutory
+              rights remain unaffected.
+            </p>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="container footer-inner">
+      <p>
+        © <span id="currentYear">2026</span> Thambi Electricals.
+        All rights reserved.
+      </p>
+
+      <nav class="footer-links" aria-label="Policy links">
+        <a href="#privacy-policy">Privacy Policy</a>
+        <a href="#terms">Terms &amp; Conditions</a>
+        <a href="#disclaimer">Disclaimer</a>
+        <a href="#refund-policy">Return &amp; Refund Policy</a>
+        <a href="#contact">Contact Us</a>
+      </nav>
     </div>
-</section>
+  </footer>
+
+  <script>
+    (function () {
+      var menuButton = document.getElementById("menuToggle");
+      var nav = document.getElementById("navLinks");
+      var year = document.getElementById("currentYear");
+
+      if (year) {
+        year.textContent = new Date().getFullYear();
+      }
+
+      if (menuButton && nav) {
+        menuButton.addEventListener("click", function () {
+          var isOpen = nav.classList.toggle("open");
+
+          menuButton.setAttribute("aria-expanded", String(isOpen));
+          menuButton.setAttribute(
+            "aria-label",
+            isOpen ? "Close navigation menu" : "Open navigation menu"
+          );
+
+          menuButton.textContent = isOpen ? "✕" : "☰";
+        });
+
+        nav.querySelectorAll("a").forEach(function (link) {
+          link.addEventListener("click", function () {
+            nav.classList.remove("open");
+            menuButton.setAttribute("aria-expanded", "false");
+            menuButton.setAttribute("aria-label", "Open navigation menu");
+            menuButton.textContent = "☰";
+          });
+        });
+      }
+    })();
+  </script>
 
 </body>
 </html>
