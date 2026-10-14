@@ -1,178 +1,1055 @@
 <!DOCTYPE html>
-<html lang="hi">
+<html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Responsive full-width website template">
-  <meta name="theme-color" content="#111827">
-  <title>My Website</title>
-  <style>
-    :root {
-      --bg: #f8fafc;
-      --surface: #ffffff;
-      --text: #111827;
-      --muted: #64748b;
-      --accent: #d97706;
-      --accent-dark: #92400e;
-      --border: #e2e8f0;
-      --content-width: 1200px;
-    }
-    * { box-sizing: border-box; }
-    html { scroll-behavior: smooth; width: 100%; }
-    body {
-      margin: 0;
-      width: 100%;
-      min-width: 0;
-      font-family: Arial, Helvetica, sans-serif;
-      color: var(--text);
-      background: var(--bg);
-      line-height: 1.6;
-      overflow-wrap: anywhere;
-    }
-    img, video, iframe, svg { max-width: 100%; }
-    img { height: auto; }
-    a { color: inherit; }
-    .site-header {
-      width: 100%;
-      background: #111827;
-      color: white;
-    }
-    .header-inner {
-      width: min(100%, var(--content-width));
-      margin: 0 auto;
-      padding: 14px 20px;
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      gap: 16px;
-    }
-    .brand { margin: 0; font-size: clamp(1.2rem, 2.6vw, 1.8rem); line-height: 1.2; }
-    .brand a { text-decoration: none; }
-    .nav { display: flex; flex-wrap: wrap; gap: 8px 18px; align-items: center; }
-    .nav a { text-decoration: none; color: #f8fafc; font-size: .95rem; }
-    .nav a:hover { color: #fbbf24; }
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#0755c9">
+<meta name="description" content="Thambi Electricals - Electrical products, lighting and electrical solutions. Contact us on WhatsApp for enquiries.">
+<title>Thambi Electricals | Quality Electrical Solutions</title>
+
+<style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --blue: #0755c9;
+    --dark: #08234d;
+    --light: #eef5ff;
+    --white: #ffffff;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: var(--white);
+    color: var(--dark);
+    overflow-x: hidden;
+}
+
+.hero {
+    min-height: 100vh;
+    min-height: 100svh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 65px 20px;
+    position: relative;
+    overflow: hidden;
+    background:
+        radial-gradient(circle at 90% 15%, #d5e6ff 0, transparent 32%),
+        radial-gradient(circle at 5% 90%, #e4efff 0, transparent 30%),
+        linear-gradient(135deg, #ffffff, #f2f7ff);
+}
+
+.hero::before {
+    content: "";
+    position: absolute;
+    width: 280px;
+    height: 280px;
+    border: 35px solid rgba(7,85,201,0.06);
+    border-radius: 50%;
+    right: -110px;
+    bottom: -80px;
+}
+
+.hero-content {
+    width: 100%;
+    max-width: 1100px;
+    text-align: center;
+    position: relative;
+    z-index: 1;
+}
+
+.top-label {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    background: #e4efff;
+    color: var(--blue);
+    border: 1px solid #c9ddff;
+    border-radius: 50px;
+    padding: 10px 18px;
+    font-size: 13px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    margin-bottom: 25px;
+}
+
+.top-label span {
+    width: 8px;
+    height: 8px;
+    background: #18a957;
+    border-radius: 50%;
+}
+
+h1 {
+    font-size: clamp(39px, 7vw, 76px);
+    line-height: 1.08;
+    letter-spacing: -2px;
+    font-weight: 800;
+    margin-bottom: 23px;
+}
+
+h1 .highlight {
+    color: var(--blue);
+    display: block;
+}
+
+.hero-description {
+    max-width: 650px;
+    margin: 0 auto 30px;
+    font-size: 17px;
+    line-height: 1.8;
+    color: #52647e;
+}
+
+.hero-features {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 12px;
+    margin-bottom: 32px;
+}
+
+.feature {
+    background: rgba(255,255,255,0.9);
+    border: 1px solid #dce7f7;
+    padding: 11px 15px;
+    border-radius: 10px;
+    font-size: 13px;
+    font-weight: 700;
+    color: #243e64;
+}
+
+.feature span {
+    color: var(--blue);
+    margin-right: 5px;
+}
+
+.whatsapp-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 11px;
+    background: #20c766;
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 700;
+    padding: 17px 29px;
+    min-height: 56px;
+    border-radius: 12px;
+    box-shadow: 0 9px 25px rgba(32,199,102,0.22);
+    transition: transform 0.2s ease, background 0.2s ease;
+}
+
+.whatsapp-btn:hover {
+    background: #17ae55;
+    transform: translateY(-3px);
+}
+
+.whatsapp-btn svg {
+    width: 24px;
+    height: 24px;
+    flex-shrink: 0;
+}
+
+.contact-note {
+    margin-top: 16px;
+    color: #718096;
+    font-size: 12px;
+}
+
+.bottom-strip {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 25px;
+    margin-top: 52px;
+    padding-top: 25px;
+    border-top: 1px solid #dce7f7;
+}
+
+.strip-item {
+    color: #294568;
+    font-size: 13px;
+    font-weight: 700;
+}
+
+.strip-item strong {
+    color: var(--blue);
+    margin-right: 5px;
+}
+
+@media (max-width: 600px) {
     .hero {
-      width: 100%;
-      min-height: 300px;
-      display: grid;
-      place-items: center;
-      padding: clamp(36px, 7vw, 84px) 20px;
-      text-align: center;
-      color: white;
-      background: linear-gradient(135deg, #111827, #374151 60%, #92400e);
+        min-height: 100svh;
+        padding: 55px 18px 40px;
     }
-    .hero-inner { width: min(100%, 900px); }
-    .hero h2 { margin: 0 0 12px; font-size: clamp(2rem, 5vw, 3.5rem); line-height: 1.12; }
-    .hero p { margin: 0 auto 22px; max-width: 680px; color: #e5e7eb; font-size: clamp(1rem, 2vw, 1.2rem); }
-    .button {
-      display: inline-block; padding: 11px 18px; border-radius: 8px;
-      background: var(--accent); color: #fff; text-decoration: none; font-weight: 700;
+
+    .top-label {
+        font-size: 11px;
+        padding: 9px 13px;
+        margin-bottom: 22px;
     }
-    .button:hover { background: var(--accent-dark); }
-    main { width: 100%; }
-    .section {
-      width: min(100%, var(--content-width));
-      margin: 0 auto;
-      padding: clamp(28px, 5vw, 56px) 20px;
+
+    h1 {
+        font-size: clamp(37px, 10vw, 52px);
+        letter-spacing: -1.5px;
+        margin-bottom: 18px;
     }
-    .section h2 { margin: 0 0 12px; font-size: clamp(1.5rem, 3vw, 2.2rem); line-height: 1.25; }
-    .section-intro { margin: 0 0 24px; color: var(--muted); max-width: 760px; }
-    .cards { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 18px; }
-    .card {
-      min-width: 0; padding: 22px; border: 1px solid var(--border);
-      border-radius: 14px; background: var(--surface);
+
+    .hero-description {
+        font-size: 15px;
+        line-height: 1.7;
+        margin-bottom: 24px;
     }
-    .card h3 { margin: 0 0 8px; font-size: 1.15rem; }
-    .card p { margin: 0; color: var(--muted); }
-    .about { background: #fff; border-top: 1px solid var(--border); border-bottom: 1px solid var(--border); }
-    .contact-box { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 20px; }
-    .site-footer { width: 100%; background: #111827; color: #e5e7eb; }
-    .footer-inner {
-      width: min(100%, var(--content-width)); margin: 0 auto;
-      padding: 24px 20px; display: flex; flex-wrap: wrap; justify-content: space-between; gap: 12px;
+
+    .hero-features {
+        gap: 8px;
+        margin-bottom: 27px;
     }
-    .footer-inner p { margin: 0; }
-    @media (max-width: 760px) {
-      .header-inner { align-items: flex-start; flex-direction: column; padding: 14px 16px; }
-      .nav { width: 100%; gap: 10px 16px; }
-      .nav a { font-size: .92rem; }
-      .cards { grid-template-columns: repeat(2, minmax(0, 1fr)); }
-      .section { padding-left: 16px; padding-right: 16px; }
-      .hero { min-height: 260px; }
+
+    .feature {
+        font-size: 12px;
+        padding: 10px 11px;
     }
-    @media (max-width: 480px) {
-      .cards { grid-template-columns: minmax(0, 1fr); }
-      .card { padding: 18px; }
-      .hero { padding-left: 16px; padding-right: 16px; }
-      .footer-inner { flex-direction: column; }
+
+    .whatsapp-btn {
+        width: 100%;
+        max-width: 330px;
+        padding: 16px 18px;
+        font-size: 15px;
     }
-  </style>
+
+    .bottom-strip {
+        gap: 15px;
+        margin-top: 35px;
+        padding-top: 22px;
+    }
+
+    .strip-item {
+        font-size: 11px;
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    html {
+        scroll-behavior: auto;
+    }
+
+    .whatsapp-btn {
+        transition: none;
+    }
+}
+</style>
 </head>
+
 <body>
-  <header class="site-header">
-    <div class="header-inner">
-      <h1 class="brand"><a href="#">My Website</a></h1>
-      <nav class="nav" aria-label="Main navigation">
-        <a href="#home">Home</a>
-        <a href="#about">About Us</a>
-        <a href="#services">Services</a>
-        <a href="#contact">Contact</a>
-      </nav>
-    </div>
-  </header>
 
-  <main>
-    <section class="hero" id="home">
-      <div class="hero-inner">
-        <h2>Welcome to My Website</h2>
-        <p>A clean, full-width and mobile-responsive website template. Replace this text with your own business details.</p>
-        <a class="button" href="#contact">Contact Us</a>
-      </div>
-    </section>
+<section class="hero">
+    <div class="hero-content">
 
-    <section class="section" id="services">
-      <h2>Our Services</h2>
-      <p class="section-intro">Add your services here. The layout adjusts automatically for mobile, tablet and desktop screens.</p>
-      <div class="cards">
-        <article class="card">
-          <h3>Service One</h3>
-          <p>Write a short description of your first service here.</p>
-        </article>
-        <article class="card">
-          <h3>Service Two</h3>
-          <p>Write a short description of your second service here.</p>
-        </article>
-        <article class="card">
-          <h3>Service Three</h3>
-          <p>Write a short description of your third service here.</p>
-        </article>
-      </div>
-    </section>
-
-    <section class="about" id="about">
-      <div class="section">
-        <h2>About Us</h2>
-        <p class="section-intro">Add your business introduction here. Keep your content, images and links relevant to your website.</p>
-      </div>
-    </section>
-
-    <section class="section" id="contact">
-      <div class="contact-box">
-        <div>
-          <h2>Contact Us</h2>
-          <p class="section-intro">Add your phone number, email address or contact link here.</p>
+        <div class="top-label">
+            <span></span>
+            Your Electrical Solutions Partner
         </div>
-        <a class="button" href="mailto:hello@example.com">Email Us</a>
-      </div>
-    </section>
-  </main>
 
-  <footer class="site-footer">
-    <div class="footer-inner">
-      <p>© <span id="year"></span> My Website. All rights reserved.</p>
-      <p><a href="#about">About Us</a> · <a href="#contact">Contact</a></p>
+        <h1>
+            Welcome to
+            <span class="highlight">Thambi Electricals</span>
+        </h1>
+
+        <p class="hero-description">
+            Discover quality electrical products and reliable electrical
+            solutions for your home, office and business. Contact us today
+            for product enquiries and assistance.
+        </p>
+
+        <div class="hero-features">
+            <div class="feature">
+                <span>✓</span> Quality Products
+            </div>
+            <div class="feature">
+                <span>✓</span> Customer Support
+            </div>
+            <div class="feature">
+                <span>✓</span> Reliable Solutions
+            </div>
+        </div>
+
+        <a class="whatsapp-btn"
+           href="https://wa.me/910000000000?text=Hi%2C%20I%20want%20more%20information%20about%20Thambi%20Electricals."
+           target="_blank"
+           rel="noopener noreferrer"
+           aria-label="Contact Thambi Electricals on WhatsApp">
+
+            <svg viewBox="0 0 32 32" fill="currentColor"
+                 aria-hidden="true">
+                <path d="M16 .8A15.1 15.1 0 0 0 3.05 23.68L1 31l7.5-1.97A15.2 15.2 0 1 0 16 .8zm0 27.55c-2.34 0-4.62-.63-6.6-1.82l-.47-.28-4.45 1.17 1.19-4.33-.31-.5A12.45 12.45 0 1 1 16 28.35zm6.83-9.32c-.37-.19-2.2-1.08-2.54-1.2-.34-.12-.59-.18-.84.19-.25.37-.96 1.2-1.18 1.45-.22.25-.44.28-.81.09-.37-.18-1.57-.58-2.99-1.85-1.1-.98-1.84-2.2-2.06-2.57-.22-.37-.02-.57.17-.75.17-.17.37-.44.56-.66.19-.22.25-.37.37-.62.12-.25.06-.47-.03-.66-.1-.18-.84-2.02-1.15-2.77-.3-.72-.61-.62-.84-.63h-.72c-.25 0-.66.1-1 .47-.34.37-1.31 1.28-1.31 3.12 0 1.83 1.34 3.6 1.53 3.85.19.25 2.64 4.03 6.39 5.65.89.38 1.58.61 2.12.78.89.28 1.7.24 2.34.15.71-.11 2.2-.9 2.51-1.77.31-.87.31-1.61.22-1.77-.09-.15-.34-.25-.71-.43z"/>
+            </svg>
+
+            Chat on WhatsApp
+        </a>
+
+        <p class="contact-note">
+            Have a question? Message us directly on WhatsApp.
+        </p>
+
+        <div class="bottom-strip">
+            <div class="strip-item">
+                <strong>✓</strong> Quality Focus
+            </div>
+            <div class="strip-item">
+                <strong>✓</strong> Helpful Support
+            </div>
+            <div class="strip-item">
+                <strong>✓</strong> Easy Enquiries
+            </div>
+        </div>
+
     </div>
-  </footer>
-  <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+</section>
+
+<style>
+.services-section {
+    padding: 75px 20px;
+    background: #ffffff;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #08234d;
+}
+
+.services-container {
+    max-width: 1150px;
+    margin: auto;
+}
+
+.services-heading {
+    text-align: center;
+    margin-bottom: 45px;
+}
+
+.services-tag {
+    display: inline-block;
+    padding: 9px 17px;
+    background: #e8f1ff;
+    color: #0755c9;
+    border-radius: 30px;
+    font-size: 12px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    margin-bottom: 16px;
+}
+
+.services-heading h2 {
+    font-size: clamp(30px, 5vw, 46px);
+    line-height: 1.2;
+    margin: 0 0 15px;
+    letter-spacing: -1px;
+}
+
+.services-heading h2 span {
+    color: #0755c9;
+}
+
+.services-heading p {
+    max-width: 600px;
+    margin: auto;
+    font-size: 15px;
+    line-height: 1.8;
+    color: #63738b;
+}
+
+.services-grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 22px;
+}
+
+.service-card {
+    position: relative;
+    padding: 30px 25px;
+    border: 1px solid #e0eaf8;
+    border-radius: 18px;
+    background: linear-gradient(145deg, #ffffff, #f5f9ff);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    overflow: hidden;
+}
+
+.service-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 30px rgba(7, 85, 201, 0.10);
+}
+
+.service-number {
+    position: absolute;
+    top: 17px;
+    right: 20px;
+    font-size: 30px;
+    font-weight: 800;
+    color: #e5edfa;
+}
+
+.service-icon {
+    width: 62px;
+    height: 62px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #0755c9;
+    color: white;
+    border-radius: 16px;
+    margin-bottom: 22px;
+}
+
+.service-icon svg {
+    width: 31px;
+    height: 31px;
+}
+
+.service-card h3 {
+    font-size: 19px;
+    margin: 0 0 12px;
+    line-height: 1.4;
+}
+
+.service-card p {
+    color: #64748b;
+    font-size: 14px;
+    line-height: 1.8;
+    margin: 0 0 20px;
+}
+
+.service-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 7px;
+    color: #0755c9;
+    font-size: 13px;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.service-link:hover {
+    color: #003b92;
+}
+
+.services-cta {
+    margin-top: 40px;
+    padding: 32px 25px;
+    background: #08234d;
+    color: #ffffff;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 22px;
+}
+
+.services-cta h3 {
+    font-size: 23px;
+    margin: 0 0 9px;
+}
+
+.services-cta p {
+    color: #d0ddf1;
+    font-size: 14px;
+    line-height: 1.7;
+    margin: 0;
+}
+
+.services-whatsapp {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 9px;
+    flex-shrink: 0;
+    background: #20c766;
+    color: #ffffff;
+    text-decoration: none;
+    padding: 15px 20px;
+    border-radius: 10px;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.services-whatsapp:hover {
+    background: #17ae55;
+}
+
+@media (max-width: 850px) {
+    .services-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 16px;
+    }
+
+    .service-card {
+        padding: 25px 20px;
+    }
+}
+
+@media (max-width: 560px) {
+    .services-section {
+        padding: 55px 16px;
+    }
+
+    .services-heading {
+        margin-bottom: 30px;
+    }
+
+    .services-heading p {
+        font-size: 14px;
+    }
+
+    .services-grid {
+        grid-template-columns: 1fr;
+        gap: 15px;
+    }
+
+    .service-card {
+        padding: 24px;
+        border-radius: 15px;
+    }
+
+    .service-icon {
+        width: 55px;
+        height: 55px;
+        margin-bottom: 17px;
+    }
+
+    .service-card h3 {
+        font-size: 18px;
+    }
+
+    .services-cta {
+        padding: 25px 20px;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .services-cta h3 {
+        font-size: 21px;
+    }
+
+    .services-whatsapp {
+        width: 100%;
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .service-card {
+        transition: none;
+    }
+}
+</style>
+
+<section class="services-section" id="services">
+    <div class="services-container">
+
+        <div class="services-heading">
+            <span class="services-tag">WHAT WE OFFER</span>
+            <h2>Our Electrical <span>Services</span></h2>
+            <p>
+                Explore electrical products and solutions from
+                Thambi Electricals. Contact our team for product
+                availability, enquiries and assistance.
+            </p>
+        </div>
+
+        <div class="services-grid">
+
+            <!-- Service 1 -->
+            <div class="service-card">
+                <span class="service-number">01</span>
+                <div class="service-icon">
+                    <svg viewBox="0 0 24 24" fill="none"
+                         stroke="currentColor" stroke-width="1.8"
+                         stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M9 18h6M10 22h4M8 14a7 7 0 1 1 8 0c-1 1-1 2-1 4h-6c0-2-1-3-1-4Z"/>
+                    </svg>
+                </div>
+                <h3>Lighting Solutions</h3>
+                <p>
+                    Explore lighting options for homes, offices and
+                    commercial spaces. Ask us about available products.
+                </p>
+               
+            </div>
+
+            <!-- Service 2 -->
+            <div class="service-card">
+                <span class="service-number">02</span>
+                <div class="service-icon">
+                    <svg viewBox="0 0 24 24" fill="none"
+                         stroke="currentColor" stroke-width="1.8"
+                         stroke-linecap="round" stroke-linejoin="round">
+                        <rect x="5" y="2" width="14" height="20" rx="2"/>
+                        <path d="M9 6h6M9 10h6M9 14h2M9 18h6"/>
+                    </svg>
+                </div>
+                <h3>Switches & Sockets</h3>
+                <p>
+                    Find switches, sockets and related electrical
+                    accessories to suit different requirements.
+                </p>
+               
+            </div>
+
+            <!-- Service 3 -->
+            <div class="service-card">
+                <span class="service-number">03</span>
+                <div class="service-icon">
+                    <svg viewBox="0 0 24 24" fill="none"
+                         stroke="currentColor" stroke-width="1.8"
+                         stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M13 2 4 14h7l-1 8 10-13h-7l0-7Z"/>
+                    </svg>
+                </div>
+                <h3>Wires & Cables</h3>
+                <p>
+                    Enquire about wires and cables for suitable
+                    residential and commercial electrical needs.
+                </p>
+               
+            </div>
+
+            <!-- Service 4 -->
+            <div class="service-card">
+                <span class="service-number">04</span>
+                <div class="service-icon">
+                    <svg viewBox="0 0 24 24" fill="none"
+                         stroke="currentColor" stroke-width="1.8"
+                         stroke-linecap="round" stroke-linejoin="round">
+                        <rect x="3" y="4" width="18" height="16" rx="2"/>
+                        <path d="M8 8v8M16 8v8M8 12h8"/>
+                    </svg>
+                </div>
+                <h3>Electrical Accessories</h3>
+                <p>
+                    Ask us about electrical fittings, accessories
+                    and essential products for your projects.
+                </p>
+                
+            </div>
+
+            <!-- Service 5 -->
+            <div class="service-card">
+                <span class="service-number">05</span>
+                <div class="service-icon">
+                    <svg viewBox="0 0 24 24" fill="none"
+                         stroke="currentColor" stroke-width="1.8"
+                         stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M12 3 3 8l9 5 9-5-9-5Z"/>
+                        <path d="m3 12 9 5 9-5M3 16l9 5 9-5"/>
+                    </svg>
+                </div>
+                <h3>Electrical Products</h3>
+                <p>
+                    Discover electrical products for everyday use.
+                    Contact us to check availability and pricing.
+                </p>
+               
+            </div>
+
+            <!-- Service 6 -->
+            <div class="service-card">
+                <span class="service-number">06</span>
+                <div class="service-icon">
+                    <svg viewBox="0 0 24 24" fill="none"
+                         stroke="currentColor" stroke-width="1.8"
+                         stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M12 22s8-4 8-11V5l-8-3-8 3v6c0 7 8 11 8 11Z"/>
+                        <path d="m9 12 2 2 4-4"/>
+                    </svg>
+                </div>
+                <h3>Product Guidance</h3>
+                <p>
+                    Get help with product enquiries so you can
+                    explore options for your electrical requirements.
+                </p>
+              
+            </div>
+
+        </div>
+
+        <div class="services-cta">
+            <div>
+                <h3>Looking for Electrical Products?</h3>
+                <p>Contact Thambi Electricals on WhatsApp for enquiries and product details.</p>
+            </div>
+
+          
+        </div>
+
+    </div>
+</section>
+
+
+<style>
+.about-section {
+    padding: 80px 20px;
+    background: #f1f6ff;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #08234d;
+}
+
+.about-container {
+    max-width: 1120px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 55px;
+    align-items: center;
+}
+
+.about-visual {
+    min-height: 370px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 30px;
+    background: linear-gradient(145deg, #0755c9, #092a63);
+    border-radius: 28px;
+    overflow: hidden;
+}
+
+.about-visual::before,
+.about-visual::after {
+    content: "";
+    position: absolute;
+    border: 1px solid rgba(255,255,255,0.18);
+    border-radius: 50%;
+}
+
+.about-visual::before {
+    width: 290px;
+    height: 290px;
+}
+
+.about-visual::after {
+    width: 210px;
+    height: 210px;
+}
+
+.about-symbol {
+    position: relative;
+    z-index: 1;
+    width: 125px;
+    height: 125px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #ffffff;
+    border-radius: 30px;
+    box-shadow: 0 18px 45px rgba(0,0,0,0.18);
+    transform: rotate(-5deg);
+}
+
+.about-symbol svg {
+    width: 76px;
+    height: 76px;
+    color: #0755c9;
+}
+
+.about-mini-card {
+    position: absolute;
+    z-index: 2;
+    background: #ffffff;
+    color: #08234d;
+    border-radius: 13px;
+    padding: 15px 18px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.13);
+    font-size: 13px;
+    font-weight: bold;
+}
+
+.about-mini-card.card-top {
+    top: 25px;
+    left: 20px;
+}
+
+.about-mini-card.card-bottom {
+    bottom: 25px;
+    right: 20px;
+}
+
+.about-mini-card span {
+    color: #0755c9;
+    margin-right: 6px;
+}
+
+.about-content .about-label {
+    display: inline-block;
+    padding: 9px 16px;
+    background: #dceaff;
+    color: #0755c9;
+    border-radius: 30px;
+    font-size: 12px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    margin-bottom: 18px;
+}
+
+.about-content h2 {
+    font-size: clamp(31px, 4vw, 45px);
+    line-height: 1.2;
+    letter-spacing: -1px;
+    margin: 0 0 22px;
+}
+
+.about-content h2 span {
+    color: #0755c9;
+}
+
+.about-content p {
+    color: #5d6f89;
+    font-size: 15px;
+    line-height: 1.9;
+    margin: 0 0 17px;
+}
+
+.about-points {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 14px;
+    margin-top: 25px;
+}
+
+.about-point {
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+    padding: 15px 12px;
+    background: #ffffff;
+    border: 1px solid #e0eaf8;
+    border-radius: 12px;
+    font-size: 13px;
+    font-weight: bold;
+    line-height: 1.5;
+}
+
+.about-check {
+    flex-shrink: 0;
+    width: 23px;
+    height: 23px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #e4efff;
+    color: #0755c9;
+    border-radius: 50%;
+    font-size: 13px;
+}
+
+.about-bottom {
+    margin-top: 27px;
+    padding-top: 23px;
+    border-top: 1px solid #d7e3f5;
+    display: flex;
+    align-items: center;
+    gap: 13px;
+}
+
+.about-bottom-icon {
+    width: 45px;
+    height: 45px;
+    background: #0755c9;
+    color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 12px;
+    font-size: 22px;
+    flex-shrink: 0;
+}
+
+.about-bottom strong {
+    display: block;
+    font-size: 14px;
+    margin-bottom: 5px;
+}
+
+.about-bottom small {
+    color: #657791;
+    font-size: 12px;
+    line-height: 1.6;
+}
+
+@media (max-width: 800px) {
+    .about-section {
+        padding: 60px 18px;
+    }
+
+    .about-container {
+        grid-template-columns: 1fr;
+        gap: 35px;
+    }
+
+    .about-visual {
+        min-height: 300px;
+    }
+
+    .about-content h2 {
+        font-size: 35px;
+    }
+}
+
+@media (max-width: 480px) {
+    .about-section {
+        padding: 48px 16px;
+    }
+
+    .about-visual {
+        min-height: 255px;
+        border-radius: 20px;
+    }
+
+    .about-visual::before {
+        width: 220px;
+        height: 220px;
+    }
+
+    .about-visual::after {
+        width: 160px;
+        height: 160px;
+    }
+
+    .about-symbol {
+        width: 95px;
+        height: 95px;
+        border-radius: 23px;
+    }
+
+    .about-symbol svg {
+        width: 60px;
+        height: 60px;
+    }
+
+    .about-mini-card {
+        padding: 11px;
+        font-size: 11px;
+    }
+
+    .about-mini-card.card-top {
+        top: 15px;
+        left: 12px;
+    }
+
+    .about-mini-card.card-bottom {
+        bottom: 15px;
+        right: 12px;
+    }
+
+    .about-content h2 {
+        font-size: 31px;
+    }
+
+    .about-content p {
+        font-size: 14px;
+    }
+
+    .about-points {
+        grid-template-columns: 1fr;
+        gap: 10px;
+    }
+}
+</style>
+
+<section class="about-section" id="about">
+    <div class="about-container">
+
+        <!-- CSS ELECTRICAL ILLUSTRATION -->
+        <div class="about-visual">
+
+            <div class="about-mini-card card-top">
+                <span>✓</span> Quality Focus
+            </div>
+
+            <div class="about-symbol">
+                <svg viewBox="0 0 100 100" fill="none"
+                     stroke="currentColor" stroke-width="4"
+                     stroke-linecap="round" stroke-linejoin="round"
+                     aria-hidden="true">
+                    <path d="M57 7 25 53h23l-5 40 32-49H52l5-37Z"/>
+                </svg>
+            </div>
+
+            <div class="about-mini-card card-bottom">
+                <span>✓</span> Customer First
+            </div>
+
+        </div>
+
+        <!-- ABOUT CONTENT -->
+        <div class="about-content">
+
+            <span class="about-label">ABOUT OUR BUSINESS</span>
+
+            <h2>
+                Get to Know
+                <span>Thambi Electricals</span>
+            </h2>
+
+            <p>
+                Welcome to Thambi Electricals, your destination for
+                electrical products and solutions. We aim to make it
+                easier for customers to explore electrical essentials
+                for their homes, offices and business requirements.
+            </p>
+
+            <p>
+                We believe in clear communication, helpful product
+                guidance and a customer-focused approach. Our goal
+                is to help you find suitable electrical products
+                according to your needs.
+            </p>
+
+            <div class="about-points">
+
+                <div class="about-point">
+                    <span class="about-check">✓</span>
+                    <span>Quality-Focused Products</span>
+                </div>
+
+                <div class="about-point">
+                    <span class="about-check">✓</span>
+                    <span>Customer-Focused Support</span>
+                </div>
+
+                <div class="about-point">
+                    <span class="about-check">✓</span>
+                    <span>Helpful Product Guidance</span>
+                </div>
+
+                <div class="about-point">
+                    <span class="about-check">✓</span>
+                    <span>Simple Enquiry Process</span>
+                </div>
+
+            </div>
+
+            <div class="about-bottom">
+                <div class="about-bottom-icon">⚡</div>
+                <div>
+                    <strong>Thambi Electricals</strong>
+                    <small>Electrical Products & Customer Assistance</small>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+</section>
+
 </body>
 </html>
